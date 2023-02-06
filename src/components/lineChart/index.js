@@ -25,8 +25,8 @@ export const RenderLineChart = (props) => {
           margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
         >
           <CartesianGrid strokeDasharray="1 3" vertical={false} />
-          <XAxis dataKey="name" />
-          <YAxis />
+          <XAxis dataKey="name" axisLine={false}/>
+          <YAxis axisLine={false}/>
           <Tooltip activeDot={false} />
           <Legend iconType="circle" iconSize={10}  formatter={renderColorfulLegendText}/>
 
