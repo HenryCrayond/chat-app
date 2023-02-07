@@ -3,19 +3,23 @@ import React from "react";
 import { removeStyle } from "./styles";
 import { ListNested } from "../listNested/listNested";
 
+const data={
+  title:"Remove this commented out code",
+  line:"L29"
+}
 export const RemoveComment = () => {
   return (
     <Paper sx={removeStyle.paperBlock}>
       <Box sx={removeStyle.flexBlock}>
         <Box>
           <Typography color={"#18283E"} letterSpacing={0.5}>
-            Remove this commented out code
+            {data.title}
           </Typography>
         </Box>
         <Box sx={removeStyle.centerBlock} pr={2}>
           <Box sx={removeStyle.dotIcon}></Box>
           <Typography style={removeStyle.lineText} pl={1}>
-            L29
+            {data.line}
           </Typography>
         </Box>
       </Box>

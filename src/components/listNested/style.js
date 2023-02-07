@@ -3,7 +3,7 @@ export const listStyle = {
 
   childCard: {
     height: 40,
-    width: 150,
+    width: "60%",
     border: 1,
     borderColor: "#CBCBCB",
     justifyContent: "space-around",

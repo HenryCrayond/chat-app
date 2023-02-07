@@ -84,7 +84,7 @@ const Severitys = () => {
     <Grid container justifyContent={"space-between"}>
       {Severity.map((item) => (
         <Grid item xs={12} md={12} lg={6}>
-          <Box sx={listStyle.childCard} width={{ md: "10px" }}>
+          <Box sx={listStyle.childCard} width={{ md: "10px" }} mt={2}>
             <Typography color={"#3D4755"} style={listStyle.cardTitle}>
               {item.title}
             </Typography>
@@ -102,15 +102,26 @@ export const Filter = () => {
   return (
     <>
       <Grid container justifyContent={"space-between"} alignItems={"center"}>
-        <Grid item >
+        <Grid item>
           <Typography style={filterStyle.filterText}>Filters</Typography>
         </Grid>
         <Grid item>
-          <Stack direction="row" spacing={2} mr={2}>
-            <Button variant="contained" disabled size="small" sx={{textTransform:"none"}} >
-            My Issues
+          <Stack direction="row" spacing={2} mr={2} mt={1}>
+            <Button
+              variant="contained"
+              disabled
+              size="small"
+              sx={{ textTransform: "none" }}
+            >
+              My Issues
             </Button>
-            <Button variant="contained" size="small" sx={{textTransform:"none"}}>All</Button>
+            <Button
+              variant="contained"
+              size="small"
+              sx={{ textTransform: "none" }}
+            >
+              All
+            </Button>
           </Stack>
         </Grid>
       </Grid>

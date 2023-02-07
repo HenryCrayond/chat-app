@@ -1,10 +1,10 @@
 import "./App.css";
-import Issues from "./components/issues/issues";
+import { RemoveError } from "./components/removeError/removeError";
 
 function App() {
   return (
     <div className="App">
-      <Issues/>
+      <RemoveError/>
     </div>
   );
 }
