@@ -12,8 +12,7 @@ import {
 export const RenderLineChart = (props) => {
   const { data = [] } = props;
 
-  const renderColorfulLegendText = (value, entry) => {
-    const { color } = entry;
+  const renderColorfulLegendText = (value) => {
     return <span style={{ color:"black", margin:5}}>{value}</span>
   }
 

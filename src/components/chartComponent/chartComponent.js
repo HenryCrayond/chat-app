@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Grid from "@mui/material/Grid";
 import { Box, Paper, Typography } from "@mui/material";
 import { RenderLineChart } from "../lineChart";

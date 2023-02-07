@@ -15,6 +15,7 @@ export const SelectInput = () => {
       value={select}
       onChange={handleChange}
       sx={chartStyle.selectSx}
+      placeholder="Issues"
     >
       <MenuItem value={0}>Bugs</MenuItem>
       <MenuItem value={20}>Code Smells</MenuItem>
